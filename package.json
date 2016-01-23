@@ -1,0 +1,35 @@
+{
+  "name": "angular2_babel",
+  "description": "angular2 + jspm + babel app",
+  "version": "1.0.0",
+  "main": "config.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gilAsier/angular2-jspm-babel"
+  },
+  "keywords": [
+    "task",
+    "management",
+    "notes"
+  ],
+  "author": "gilAsier",
+  "license": "MIT",
+  "homepage": "https://github.com/gilAsier/angular2-jspm-babel#readme",
+  "scripts": {
+    "build": "jspm bundle-sfx --minify --inject app/boot build/bundle.js"
+  },
+  "jspm": {
+    "dependencies": {
+      "angular2": "npm:angular2@^2.0.0-beta.1",
+      "css": "github:systemjs/plugin-css@^0.1.20",
+      "reflect-metadata": "npm:reflect-metadata@^0.1.0",
+      "zone.js": "npm:zone.js@^0.5.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "clean-css": "npm:clean-css@^3.4.9",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
