@@ -2,6 +2,7 @@
   "name": "angular2_babel",
   "description": "angular2 + jspm + babel app",
   "version": "1.0.0",
+  "main": "config.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/gilAsier/angular2-jspm-babel"
@@ -17,17 +18,7 @@
   "scripts": {
     "build": "jspm bundle-sfx --minify --inject app/boot build/bundle.js"
   },
-  "dependencies": {
-    "express": "^4.13.3",
-    "body-parser": "^1.14.2",
-    "morgan": "^1.6.1",
-    "method-override": "^2.3.5",
-    "underscore": "^1.8.3"
-  },
   "jspm": {
-    "directories": {
-      "baseURL": "public"
-    },
     "dependencies": {
       "angular2": "npm:angular2@^2.0.0-beta.1",
       "css": "github:systemjs/plugin-css@^0.1.20",
